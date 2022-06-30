@@ -1,0 +1,23 @@
+@mixin respond-to-min($breakpoint, $direction: "") {
+  @if $direction == "height" {
+    @media only screen and (min-height: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @media only screen and (min-width: $breakpoint) {
+      @content;
+    }
+  }
+}
+
+@mixin respond-to-max($breakpoint, $direction: "") {
+  @if $direction == "height" {
+    @media only screen and (max-height: $breakpoint) {
+      @content;
+    }
+  } @else {
+    @media only screen and (max-width: $breakpoint) {
+      @content;
+    }
+  }
+}

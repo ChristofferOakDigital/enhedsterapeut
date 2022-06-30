@@ -1,0 +1,145 @@
+[
+  {
+    "slug": "klinikken",
+    "path": "/klinikken",
+    "title": {
+      "type": "text",
+      "value": "Klinikken"
+    },
+    "content": {
+      "meta": {
+        "title": "Enhedsterapi - Om klinikken"
+      },
+      "blocks": [
+        {
+          "name": "Hero",
+          "content": {
+            "title": "Lidt om klinikken"
+          }
+        },
+        {
+          "name": "Hero",
+          "content": {
+            "background": "brown",
+            "title": "Lidt om klinikken",
+            "image": {
+              "url": "/media/images/krystal.jpg",
+              "alt": "Syg nok alt tekst bro"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "behandlinger",
+    "path": "/behandlinger",
+    "title": {
+      "type": "text",
+      "value": "Behandlinger"
+    },
+    "content": {
+      "meta": {
+        "title": "Enhedsterapi - Behandlinger"
+      },
+      "blocks": [
+        {
+          "name": "Hero",
+          "content": {
+            "title": "Lidt om hvilke behandlinger man kan få"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "home",
+    "path": "/home",
+    "title": {
+      "type": "image",
+      "value": "/media/images/logo.png"
+    },
+    "content": {
+      "meta": {
+        "title": "Enhedsterapi - hos Lisbeth Jessen"
+      },
+      "blocks": [
+        {
+          "name": "Hero",
+          "content": {
+            "title": "A healer is someone who holds space for you while you awaken your inner healer.",
+            "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium egestas porta consectetur arcu, ipsum at.",
+            "linkMore": {
+              "title": "Læs mere",
+              "url": "/behandlinger"
+            },
+            "linkBook": {
+              "title": "Book tid",
+              "url": "/book-tid"
+            },
+            "imagePos": "right",
+            "image": {
+              "url": "/media/images/krystal.jpg",
+              "alt": "Syg nok alt tekst bro"
+            }
+          }
+        },
+        {
+          "name": "Paragraph",
+          "content": {
+            "align": "center",
+            "title": "Hvad kan enhedsterapi gøre for dig?",
+            "text": "At hjælpe det enkelte menneske, patient eller klient til at hjælpe sig selv i mange forskellige former for problemstillinger. Princippet er at styrke personlige evner, ressourcer og muligheder uanset funktionsniveauet, samt at arbejde ud fra den enkeltes kontekst med familie- og psykosocial baggrund. Ved samarbejde mellem behandler og klient at op fælles resonans og respons. Der er mange forskellige redskaber og nogle af dem er specielt effektive i forbindelse med stress, traumer, chok og fobier (jævnf.  Slavinski)."
+          }
+        },
+        {
+          "name": "TextImage",
+          "content": {
+            "background": "terra",
+            "title": "Enhedsterapeut Lisbeth Jessen",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tincidunt ante imperdiet vel pellentesque nec sed. Amet in placerat netus faucibus. Etiam diam eget at diam, at ridiculus sem magna. Commodo, lacus, quisque tellus, orci nisi, feugiat. Dictum non sed placerat donec semper.",
+            "link": {
+              "title": "Læs mere",
+              "url": "/klinikken"
+            },
+            "imagePos": "right",
+            "image": {
+              "url": "/media/images/krystal.jpg",
+              "alt": "Syg nok alt tekst bro"
+            }
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "book-tid",
+    "path": "/book-tid",
+    "title": {
+      "type": "text",
+      "value": "Book tid"
+    },
+    "content": {
+      "meta": {
+        "title": "Enhedsterapi - Book tid"
+      },
+      "blocks": [
+        {
+          "name": "Hero",
+          "content": {
+            "title": "Her kan du bestille en tid :-)"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "slug": "kirojess",
+    "path": "https://kirojess.dk/",
+    "title": {
+      "type": "text",
+      "value": "Kiropraktik"
+    },
+    "content": {}
+  }
+]
