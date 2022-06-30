@@ -1,15 +1,4 @@
 <script setup lang="ts">
-interface HeaderData {
-    path: string;
-    title: {
-        type: string;
-        value: string;
-    };
-}
-
-// const response = await $fetch.raw("http://localhost:3000/testData/pages.json");
-// const pages = response._data as HeaderData[];
-
 const toggleBurger = ref(false);
 </script>
 
@@ -38,22 +27,10 @@ const toggleBurger = ref(false);
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/kontakt" @click="toggleBurger = false">
+                        <NuxtLink to="/book-tid" @click="toggleBurger = false">
                             <span>Kontakt</span>
                         </NuxtLink>
                     </li>
-                    <!-- <li v-for="page in pages">
-            <NuxtLink :to="`${page.path}`" @click="toggleBurger = false">
-              <span v-if="page.title.type === 'text'">{{
-                page.title.value
-              }}</span>
-              <img
-                v-if="page.title.type === 'image'"
-                :src="page.title.value"
-                alt="Hej"
-              />
-            </NuxtLink>
-          </li> -->
                 </ul>
             </nav>
         </div>
@@ -62,27 +39,30 @@ const toggleBurger = ref(false);
             <nav>
                 <ul>
                     <li>
+                        <NuxtLink to="/klinikken">
+                            <span>Klinikken</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink to="/behandlinger">
+                            <span>Behandlinger</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
                         <NuxtLink to="/">
                             <img src="/media/images/logo.png" alt="Hej" />
                         </NuxtLink>
                     </li>
                     <li>
-                        <NuxtLink to="/kontakt">
+                        <NuxtLink to="/book-tid">
                             <span>Kontakt</span>
                         </NuxtLink>
                     </li>
-                    <!-- <li v-for="page in pages">
-            <NuxtLink :to="`${page.path}`">
-              <span v-if="page.title.type === 'text'">{{
-                page.title.value
-              }}</span>
-              <img
-                v-if="page.title.type === 'image'"
-                :src="page.title.value"
-                alt="Hej"
-              />
-            </NuxtLink>
-          </li> -->
+                    <li>
+                        <NuxtLink to="https://kirojess.dk/" target="_blank">
+                            <span>Kiropraktik</span>
+                        </NuxtLink>
+                    </li>
                 </ul>
             </nav>
         </div>
