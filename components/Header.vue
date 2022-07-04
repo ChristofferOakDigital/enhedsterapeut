@@ -5,7 +5,7 @@ const toggleBurger = ref(false);
 <template>
     <header>
         <div class="mobile">
-            <NuxtLink to="/home" class="logo" @click="toggleBurger = false">
+            <NuxtLink to="/" class="logo" @click="toggleBurger = false">
                 <img src="/media/images/logo.png" alt="Hej logo" />
             </NuxtLink>
 
@@ -22,13 +22,30 @@ const toggleBurger = ref(false);
             <nav :class="{ show: toggleBurger }">
                 <ul>
                     <li>
-                        <NuxtLink to="/" @click="toggleBurger = false">
-                            <img src="/media/images/logo.png" alt="Hej" />
+                        <NuxtLink to="/klinikken" @click="toggleBurger = false">
+                            <span>Klinikken</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink
+                            to="/behandlinger"
+                            @click="toggleBurger = false"
+                        >
+                            <span>Behandlinger</span>
                         </NuxtLink>
                     </li>
                     <li>
                         <NuxtLink to="/book-tid" @click="toggleBurger = false">
                             <span>Kontakt</span>
+                        </NuxtLink>
+                    </li>
+                    <li>
+                        <NuxtLink
+                            to="https://kirojess.dk/"
+                            target="_blank"
+                            @click="toggleBurger = false"
+                        >
+                            <span>Kiropraktik</span>
                         </NuxtLink>
                     </li>
                 </ul>
@@ -156,15 +173,30 @@ header {
 
         nav {
             position: fixed;
-            top: 0;
+            top: 75px;
             left: 0;
-            height: 100vh;
+            height: calc(100vh - 75px);
             width: 100vw;
-            padding: 75px 2rem;
-            background-color: $color--white;
+            padding: 4rem 2rem;
+            background-color: $color--sand;
             z-index: 2;
             transform: translateX(100%);
             transition: transform 300ms ease-out;
+
+            ul {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                list-style-type: none;
+
+                li {
+                    text-align: right;
+
+                    a {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
 
             &.show {
                 transform: translateX(0) !important;

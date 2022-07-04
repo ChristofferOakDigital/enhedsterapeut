@@ -21,6 +21,7 @@ const heroContent = {
 
 <template>
     <article>
+        <Contact />
         <Hero :content="heroContent" />
     </article>
 </template>

@@ -1,0 +1,40 @@
+form {
+    fieldset {
+        label {
+            position: relative;
+
+            input {
+                display: block;
+                height: 100%;
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border: 1px solid transparent;
+
+                &:focus {
+                    outline: none;
+                }
+
+                &.error {
+                    border-color: red;
+                }
+            }
+
+            .label {
+                position: absolute;
+                top: 50%;
+                left: 2rem;
+                max-width: calc(100% - 4rem);
+                font-size: 1.6rem;
+                transform: translateY(-50%);
+                transition: all 150ms ease-out;
+                pointer-events: none;
+            }
+
+            input:focus + .label,
+            input:not(:placeholder-shown) + .label {
+                top: 15%;
+                font-size: 1rem;
+            }
+        }
+    }
+}

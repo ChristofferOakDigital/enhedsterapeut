@@ -66,9 +66,13 @@ defineProps<{
 
 section {
     position: relative;
-    padding: 7.5rem 0 0;
+    padding: 5rem 0 0;
     color: $color--black;
     background-color: $color--sand;
+
+    @include respond-to-min($md) {
+        padding: 7.5rem 0 0;
+    }
 
     &.brown {
         color: $color--sand;
