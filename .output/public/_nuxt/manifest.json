@@ -1,0 +1,74 @@
+{
+  "node_modules/nuxt/dist/app/entry.mjs": {
+    "file": "entry-af2702d2.mjs",
+    "src": "node_modules/nuxt/dist/app/entry.mjs",
+    "isEntry": true,
+    "dynamicImports": [
+      "pages/behandlinger.vue",
+      "pages/book-tid.vue",
+      "pages/index.vue",
+      "pages/klinikken.vue",
+      "layouts/default.vue"
+    ],
+    "css": [
+      "entry.91de9643.css"
+    ],
+    "assets": [
+      "rufina-regular.8221f623.woff2",
+      "sarabun-light.190405ed.woff2"
+    ]
+  },
+  "pages/behandlinger.vue": {
+    "file": "behandlinger-354dd7e4.mjs",
+    "src": "pages/behandlinger.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Hero-ffb158f4.mjs",
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "_Hero-ffb158f4.mjs": {
+    "file": "Hero-ffb158f4.mjs",
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/book-tid.vue": {
+    "file": "book-tid-1fb8dd68.mjs",
+    "src": "pages/book-tid.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs",
+      "_Hero-ffb158f4.mjs"
+    ]
+  },
+  "pages/index.vue": {
+    "file": "index-c8bb2dd9.mjs",
+    "src": "pages/index.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Hero-ffb158f4.mjs",
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "pages/klinikken.vue": {
+    "file": "klinikken-dfe663dd.mjs",
+    "src": "pages/klinikken.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_Hero-ffb158f4.mjs",
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ]
+  },
+  "layouts/default.vue": {
+    "file": "default-12efc751.mjs",
+    "src": "layouts/default.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "node_modules/nuxt/dist/app/entry.mjs"
+    ],
+    "css": [
+      "default.6909a7f6.css"
+    ]
+  }
+}
